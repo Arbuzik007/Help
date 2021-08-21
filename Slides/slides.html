@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.slider{
+	position: relative;
+}
+	
+.slick-list{
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 30%;
+	z-index: 10;
+	font-size: 0;
+	width: 100px;
+	height: 100px;
+	border: 0;
+}
+
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('D:/zlata/pictures/Group37.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('D:/zlata/pictures/Group38.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #C0C0C0;
+	border: 0;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: grey;
+}
+
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.5;
+}
+
+.slider__item{
+	transition: all 0.3s ease 0s;
+	text-align: center;
+	opacity: 0.4;
+}
+
+.slider__item.slick-center{
+	opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<div class="slider">
+	<div class="slider__item">
+		<img src="D:/zlata/pictures/image15(1).png">
+	</div>
+	<div class="slider__item">
+		<img src="D:/zlata/pictures/image15(2).png">
+	</div>
+	<div class="slider__item">
+		<img src="D:/zlata/pictures/image15(4).png">
+	</div>
+	<div class="slider__item">
+		<img src="D:/zlata/pictures/image15(6).png">
+	</div>
+	<div class="slider__item">
+		<img src="D:/zlata/pictures/image15(8).png">
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="D:/zlata/slick-1.8.1/slick/slick.min.js"></script>
+<script src="D:/zlata/GitHub/slides.js"></script>
+
+</body>
+</html>

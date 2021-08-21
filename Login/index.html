@@ -7,20 +7,20 @@
 </head>
 <body>
 	<label>E-mail</label><br>
-	<input type="text" name="Login" id="log"><br>
+	<input type="text" id="log"><br>
 	<label>Password</label><br>
-	<input type="password" name="Pass" id="pass"><br>
-	<button id="btn" onclick="Login()">Sing</button>
-	
+	<input type="password" id="pass"><br>
+	<button onclick="Login()">Sing</button>
+
 	<script type="text/javascript">
 		function Login() {
 			let log = document.getElementById("log").value;
 			let pass = document.getElementById("pass").value;
-			if (log == 'Zlata' & pass == "1234") {
-				console.log("Ok")
-				open.window('https://arbuzik007.github.io/Work/Login/index_2.html');
+			if (log === 'Zlata' && pass === "1234") {
+				console.log("Ok");
+				window.open('https://arbuzik007.github.io/Work/Login/index_2.html');
 			}else{
-				alert('Проверьте е-маил или пароль');
+				alert('Проверьте E-mail или пароль');
 			}
 		}
 	</script>

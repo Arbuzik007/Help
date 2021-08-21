@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<label>E-mail</label><br>
+	<input type="text" name="Login" id="log"><br>
+	<label>Password</label><br>
+	<input type="password" name="Pass" id="pass"><br>
+	<button id="btn" onclick="Login()">Sing</button>
+	
+	<script type="text/javascript">
+		function Login() {
+			let log = document.getElementById("log").value;
+			let pass = document.getElementById("pass").value;
+			if (log == 'Zlata' & pass == "1234") {
+				console.log("Ok")
+				open.window('/Решение разных задач/Login/login_2.html');
+			}else{
+				alert('Проверьте е-маил или пароль');
+			}
+		}
+	</script>
+</body>
+</html>

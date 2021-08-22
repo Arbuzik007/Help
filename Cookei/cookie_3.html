@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+
+<style>
+  
+</style>
+</head>
+
+<body>
+   
+
+<p><button onclick="setCookie('a','1');">Create Cookie a</button> <code>setCookie('a','1');</code></p>
+
+<p><button onclick="setCookie('a',parseInt(getCookie('a'))+1 );">Add 1 to Cookie a</button> <code>setCookie('a',parseInt(getCookie('a'))+1 );</code></p>
+
+<p><button onclick="setCookie('b','1x@c+d_test');">Create Cookie b</button> <code>setCookie('b','1x@c+d_test');</code></p>
+<hr>
+<p><button onclick="setCookie('a','',-1);setCookie('b','',-1);">Delete Cookie a and b</button> <code>setCookie('a','',-1);setCookie('b','',-1);</code></p>
+<hr>
+<p><button onclick="document.getElementById('a_rep').innerHTML=getCookie('a');">Display cookie a content</button> <code>document.getElementById('a_rep').innerHTML=getCookie('a');</code>
+<br>cookie "a" content: <span id="a_rep"></span></p>
+
+<p><button onclick="document.getElementById('b_rep').innerHTML=getCookie('b');">Display cookie b content</button> <code>document.getElementById('b_rep').innerHTML=getCookie('b');</code>
+<br>cookie "b" content: <span id="b_rep"></span></p>
+<hr>
+Functions:
+<pre><code>
+function getCookie(name) {
+  return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" +
+  encodeURIComponent(name).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+}
+
+function setCookie(name, value, expiresdays, path, domain, secure) {
+  var date=new Date();date.setTime(date.getTime()+(expiresdays*24*60*60*1000));
+  document.cookie=encodeURIComponent(name)+"="+escape(value)+
+    ((expiresdays)?"; expires="+date.toUTCString():"")+
+    ((path)?"; path="+path:"")+((domain)?"; domain="+domain:"")+((secure) ? "; secure":"");
+}
+</code></pre> 
+
+
+<script type="text/javascript">
+    
+    function getCookie(name) {
+  return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(name).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+}
+
+function setCookie(name, value, expiresdays, path, domain, secure) {
+  var date=new Date();date.setTime(date.getTime()+(expiresdays*24*60*60*1000));
+  document.cookie=encodeURIComponent(name)+"="+escape(value)+
+    ((expiresdays)?"; expires="+date.toUTCString():"")+
+    ((path)?"; path="+path:"")+((domain)?"; domain="+domain:"")+((secure) ? "; secure":"");
+}
+</script>
+
+
+</body>
+
+
+</html>

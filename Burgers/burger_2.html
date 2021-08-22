@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		.page{
+			padding: 90px 0px 30px 0px;
+		}
+
+		.page__section{
+			padding: 30px;
+			max-width: 1200px;
+			margin: 0px auto;
+		}
+
+		.page__section_1{
+			background-color: red;
+		}
+
+		.page__title{
+			font-size: 40px;
+			margin: 0px 0px 20px 0px;
+		}
+
+		.page__text{
+			font-size: 16px;
+			line-height: 150%;
+		}
+
+		.page__text p {
+			margin: 0px 0px 20px 0px;
+		}
+
+		.page__section_2{
+			background-color: orange;
+		}
+
+		.page__sub-title{
+			font-size: 30px;
+			margin: 0px 0px 20px 0px;
+		}
+
+		.page__section_3{
+			background-color: yellow;
+		}
+
+
+
+		.header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			background-color: purple;
+		}
+		.header__container {
+			max-width: 1200px;
+			margin: 0px auto;
+			display: flex;
+			padding: 0px 30px;
+			min-height: 70px;
+		}
+		.header__menu {
+
+		}
+		.menu {}
+		.menu__icon {}
+		.menu__body {}
+		.menu__list {
+			display: flex;
+		}
+		.menu__list a {
+			text-decoration: none;
+		}
+		.menu__list li {
+			list-style-type: none;
+		}
+		.menu__list > li {
+			position: relative;
+			margin: 0px	0px 0px 20px;
+		}
+		.header__link {
+			color: white;
+		}
+		.menu__sub-list {}
+		.header__sub-link {}
+
+		@media (min-width: 767px;){
+			.menu__list {
+				align-items: center;
+
+			}
+
+			.menu__list > li {
+				padding: 10px 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__menu menu">
+				<div class="menu__icon">
+					<span></span>
+				</div>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li><a class="header__link" href="">Раздел 1</a></li>
+						<li><a class="header__link" href="">Раздел 2</a></li>
+						<li><a class="header__link" href="">Раздел 3</a></li>
+						<li><a class="header__link" href="">Раздел 4</a></li>
+						<li>
+							<a class="header__link" href="">Страница 1</a>
+							<ul class="menu__sub-list">
+								<li><a class="header__sub-link" href="">Раздел страницы 1</a></li>
+								<li><a class="header__sub-link" href="">Раздел страницы 2</a></li>
+								<li><a class="header__sub-link" href="">Раздел страницы 3</a></li>
+							</ul>
+						</li>
+						<li><a class="header__link" href="">Страница 2</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="page">
+		<section class="page__section page__section_1">
+			<h1 class="page__title">ОТЛИЧНАЯ СТАТЬЯ</h1>
+			<p class="page__text">ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!</p>
+		</section>
+		<section class="page__section page__section_2">
+			<h1 class="page__sub-title">ОТЛИЧНАЯ СТАТЬЯ 2</h1>
+			<p class="page__text">ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!</p>
+		</section>
+		<section class="page__section page__section_3">
+			<h1 class="page__sub-title">ОТЛИЧНАЯ СТАТЬЯ 3</h1>
+			<p class="page__text">ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!ПРИВЕТ!</p>
+		</section>
+	</main>
+</body>
+</html>

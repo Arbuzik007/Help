@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+	
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.form__btn{
+	background: #FF5300;
+	color: #FFFFFF;
+	padding: 10px 30px;
+	filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.1));
+	border: none;
+	border-radius: 5px;
+	margin: 5px 5px 5px 0;
+	align-items: center;
+}
+.modal {
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+  	position: absolute;
+  	justify-content: center;
+  	width: 100%;
+  	height: 100%; 
+  	top: 0;
+  	left: 0;
+    position: fixed;
+    perspective: 500px;
+/*  opacity: 0;*/
+  /*visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;*/
+}
+.modal-wrapper {
+	width: 50%;
+	height: 40%;
+	max-width: 400px;
+	min-height: 300px;
+	top: 30%;
+	background: #FFFFFF;
+	position: absolute;
+	box-shadow: 0px 0px 13px 0px rgba(255, 83, 0,0.4);
+	border-radius: 10px;
+	border: 2px solid #FF5300;
+	transform: rotateX(0deg);
+	animation-name: modal;
+	animation-duration: 1s;
+}
+.modal-header {
+	padding: 20px;
+}
+.closeBtn {
+	cursor: pointer;
+	float: right;
+	font-size: 40px;
+	color: black;
+
+}
+.modsl-body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	margin-top: 1em;
+	display: flex;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-style: bold;
+	font-weight: 700;
+	font-size: 39px;
+	line-height: 150%;
+	color: #373737;
+}
+.modal-footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.modal-close:hover {
+	transform: scale(1.2);
+
+}
+
+@keyframes modal {
+	from {
+		opacity: 0;
+		top: 10%;
+		transform: rotateX(15deg);
+	}
+	to {
+		opacity: 1;
+		top: 30%;
+		transform: rotateX(0deg);
+	}
+}
+
+
+	</style>
+</head>
+<body>
+	<button id="SubscribeBtn"  class="form__btn" type="submit">Subscribe Now</button>
+
+
+	<div id="myModal" class="modal">
+        <div class="modal-wrapper">
+        	<div class="modal-header">
+      			<span id="closeBtn" class="closeBtn">&times;</span>
+      		</div>	
+            	<div class="modsl-body">
+          			<p class="">Successfull sent</p>
+            	</div>
+            		<div class="modal-footer">
+              			<img id="modal-close" class="modal-close"  src="img/Vector.jpg">
+              		</div>	
+        </div>      
+    </div>
+        
+      
+	<script>
+// document.getElementById('SubscribeBtn').addEventListener( "click", modal);
+// let modal = document.getElementById('myModal');
+// function mosal() {
+// modal.style.display = "flex";
+// }
+  let btn = document.querySelector('#SubscribeBtn');
+  let modal = document.querySelector('#myModal');
+  let cloceBtn = document.querySelector('#closeBtn');
+  let modal_close = document.querySelector('#modal-close');
+
+  btn.addEventListener('click', function() {
+  	modal.style.display = 'flex';
+  })
+
+  cloceBtn.addEventListener('click', function() { 
+  	modal.style.display = 'none';
+  })
+
+  modal_close.addEventListener('click', function() { 
+  	modal.style.display = 'none';
+  })
+
+  window.addEventListener('click', function(e) { 
+  	if(e.target == modal){
+  	modal.style.display = 'none';
+  	}
+  })
+
+	</script>
+
+
+</body>
+</html>

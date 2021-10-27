@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Сколько мне лет?</title>
+</head>
+<body>
+    <script>
+        
+        let day = prompt('В какой день Вы роделись?');
+        let month = prompt('В какой месяц Вы роделись(введите цифрой)?');
+        let year = prompt('В какой год Вы роделись?');
+
+        let now_date = new Date;
+
+        let new_year = now_date.getFullYear();
+        let new_month = now_date.getMonth();
+        let new_day = now_date.getDate();
+
+        let sum_year_minus = new_year - year - 1;
+        let sum_year = new_year - year;
+
+        if(new_day<day && new_month<month) {
+            alert('Вам сейчас ' + sum_year_minus + ' лет.');
+        } else if (new_day>=day && new_month>=month) {
+            alert('Вам сейчас ' + sum_year + ' лет.');
+        }
+        //  else {
+        //     alert('Скорее всего Вы сделали что-то не так.');
+        // }
+        
+    </script>
+</body>
+</html>
